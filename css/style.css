@@ -1,0 +1,193 @@
+/* (c) veeti.photos unless otherwise noted */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/* prettier-ignore */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End reset css */
+
+body {
+  margin: 0 auto;
+  max-width: 80rem;
+  font-family: "Raleway", "Open Sans", "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14pt;
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+p,
+ul {
+  margin: 1rem 0;
+}
+
+main {
+  flex: 1;
+}
+
+main > * {
+  margin: 2rem 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+figure {
+  margin: 2rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
+}
+
+blockquote {
+  border-left: 0.25rem solid black;
+  padding-left: 1.25rem;
+}
+
+header,
+footer {
+  background: #272822;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav a {
+  margin-left: 1rem;
+}
+
+footer {
+  margin: 2rem 0 0 0;
+}
+
+header a,
+footer a {
+  color: white;
+}
+
+.post_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post_item {
+  box-sizing: border-box;
+  flex: 1 0 50%;
+  padding: 1rem;
+}
+
+.post_item:hover {
+  box-shadow: 0 0 1px #000;
+}
+
+.post_item a {
+  text-decoration: none;
+}
+
+.post_item figcaption {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .post_list {
+    flex-direction: column;
+  }
+
+  .post_item {
+    border-bottom: 1px solid #272822;
+  }
+
+  figure {
+    margin: 2rem -1rem;
+  }
+  figure figcaption {
+    margin: 0 1rem;
+  }
+  header,
+  footer {
+    margin: 0;
+    padding: 1rem;
+  }
+}

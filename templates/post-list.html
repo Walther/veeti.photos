@@ -1,0 +1,11 @@
+<ul class="post_list">
+    $for(posts)$
+    <li class="post_item">
+        <a href="$url$">
+            <h2>$title$</h2>
+            <p>$if(teaser)$ $teaser$ $endif$</p>
+            <p>$date$</p>
+        </a>
+    </li>
+    $endfor$
+</ul>
