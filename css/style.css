@@ -170,6 +170,11 @@ footer a {
   display: none;
 }
 
+.post_item .date_continue_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 600px) {
   .post_list {
     flex-direction: column;
