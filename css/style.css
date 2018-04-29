@@ -175,6 +175,23 @@ footer a {
   justify-content: space-between;
 }
 
+.flexwrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.halfwidth {
+  box-sizing: border-box;
+  flex: 1 0 50%;
+  padding: 1rem;
+}
+
+.thirdwidth {
+  box-sizing: border-box;
+  flex: 1 0 33%;
+  padding: 1rem;
+}
+
 @media only screen and (max-width: 600px) {
   .post_list {
     flex-direction: column;
@@ -182,6 +199,12 @@ footer a {
 
   .post_item {
     border-bottom: 1px solid #272822;
+  }
+
+  .halfwidth,
+  .thirdwidth {
+    flex: 1 0 100%;
+    padding: 0;
   }
 
   figure {
