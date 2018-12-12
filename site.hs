@@ -53,15 +53,8 @@ main = hakyll $ do
     match "index.html" $ do
         route idRoute
         compile $ do
-            posts <- fmap (take 2) . recentFirst =<< loadAllSnapshots "blog/*.md" "content"
-            let indexCtx =
-                    listField "posts" teaserCtx (return posts) `mappend`
-                    constField "title" "veeti.photos"          `mappend`
-                    defaultContext
-
             getResourceBody
-                >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= loadAndApplyTemplate "templates/index.html" defaultContext
                 >>= relativizeUrls
                 >>= cleanIndexUrls
 
