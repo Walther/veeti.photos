@@ -80,6 +80,8 @@ ul {
 
 main {
   flex: 1;
+  max-width: 90ch;
+  margin: 0 auto;
 }
 
 main > * {
@@ -128,7 +130,6 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  font-size: 1.5rem;
 }
 
 nav a,
