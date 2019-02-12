@@ -80,12 +80,15 @@ ul {
 
 main {
   flex: 1;
-  max-width: 90ch;
   margin: 0 auto;
 }
 
 main > * {
   margin: 2rem 1rem;
+}
+
+article {
+  max-width: 90ch;
 }
 
 h1 {
@@ -144,6 +147,13 @@ footer {
 header a,
 footer a {
   color: white;
+}
+
+.index-photo {
+  background-image: url("/images/2018/2018-12-01/_DSF1522.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .post_list {
